@@ -18,10 +18,38 @@ h1{
     color: #fff;
 }
 
+p{
+    text-align: center;
+    margin: 50px 0;
+    color: #333232;
+}
+
 .contenedor{
     margin: 50px auto;
     width: 400px;
     padding: 30px;
     background: rgb(0, 0, 0, 0.5) ;
     border-radius: 10px;
+}
+
+.contenedor h2{
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.contenedor .elemento{
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento input[type="submit"]{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: #527bec;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
