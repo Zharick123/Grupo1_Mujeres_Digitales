@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <h1>App Nota</h1>
+    </header>
+
+    <!--Section-->
+    <section id="contenido" class="contenedor">
+        <h2>Notas</h2>
+
+        <form id="formulario" class="elemento">
+            <label for="nota"></label>
+            <textarea id="nota" placeholder="Escribe tu nota..."></textarea>
+            <input type="submit" value="Agregar Nota">
+        </form>
+
+        <!-- Campo de búsqueda para filtrar notas -->
+        <input type="text" id="filtro-notas" placeholder="Buscar nota..." class="elemento">
+
+        <!-- Contenedor para las notas -->
+        <div id="lista-notas" class="elemento">
+            <h2>Mis Notas</h2>
+            <ul id="notas">
+                <!-- Las notas aparecerán aquí -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Mujeres Digitales - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
