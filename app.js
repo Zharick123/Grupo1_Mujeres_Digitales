@@ -1,5 +1,6 @@
 //Variables
 const formulario = document.querySelector("#formulario");
+const lista_notas = document.querySelector("#lista_notas");
 
 //EventListeners
 eventListeners ();
