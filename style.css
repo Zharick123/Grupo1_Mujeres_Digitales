@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    min-height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(50deg, #4594fa, #a878e2);
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+}
+
+p{
+    text-align: center;
+    margin: 50px 0;
+    color: #333232;
+}
+
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgb(0, 0, 0, 0.5) ;
+    border-radius: 10px;
+}
+
+.contenedor h2{
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.contenedor .elemento{
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento textarea{
+    width: 98%;
+    min-height: 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    resize: none;
+    color: wheat;
+    background: transparent;
+    font-family: "Poppins";
+}
+
+.contenedor .elemento .placeholder textarea{
+    color: wheat;
+}
+.contenedor .elemento input[type="submit"]{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: #527bec;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.contenedor .elemento input[type="submit"]:hover{
+    background: #3860e2;
+}
+
+
+
+.error {
+    background-color: rgb(248, 59, 59);
+    text-align: center;
+    padding: 5px;
+    max-width: 400px;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.borrar-nota {
+    margin-left: auto;
+    border: none;
+    background-color: rgb(91, 24, 153);
+    color: wheat;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 2px 8px;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.borrar-nota:hover {
+    background-color: rgb(238, 41, 41);
+}
+li {
+    list-style: none;
+    background-color: rgba(228, 227, 227, 0.555);
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 3px solid #520f66;
+    margin-top: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
