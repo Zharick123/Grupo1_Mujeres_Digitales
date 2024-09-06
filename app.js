@@ -80,8 +80,8 @@ function crearHTML (){
 }
 
 function limpiarHTML() {
-    while (lista-notas.firstChild) {
-        lista-notas.removeChild(lista-notas.firstChild);
+    while (lista_notas.firstChild) {
+        lista_notas.removeChild(lista_notas.firstChild);
     }
 }
 
