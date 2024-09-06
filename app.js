@@ -9,7 +9,7 @@ eventListeners ();
 function eventListeners(){
     formulario.addEventListener("submit", agregarNota);
 
-}
+};
 
 //Funciones
 function agregarNota (e){
@@ -22,12 +22,12 @@ function agregarNota (e){
     if (nota === "") {
         mostrarError("La nota no puede ir vacía");
         return;
-    }
+    };
 
     const notaObj = {
         id: Date.now(),
         nota
-    }
+    };
 
     //Añadir al arreglo de notas
     notas = [...notas, notaObj];
@@ -35,8 +35,11 @@ function agregarNota (e){
     //Crear HTML
     crearHTML();
 
+    //Reiniciar el formulario
+    formulario.reset()
 
-}
+};
+
 
 //Mostrar mensaje de error
 function mostrarError (error){
@@ -54,10 +57,13 @@ function mostrarError (error){
         mensajeError.remove();
     }, 3000);
 
-}
+};
 
 //Muestra un listado de las notas
 function crearHTML (){
+
+    limpiarHTML();
+
     if (notas.length > 0){
         notas.forEach( nota => {
 
@@ -72,3 +78,10 @@ function crearHTML (){
         });
     }
 }
+
+function limpiarHTML() {
+    while (lista-notas.firstChild) {
+        lista-notas.removeChild(lista-notas.firstChild);
+    }
+}
+
