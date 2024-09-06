@@ -7,7 +7,16 @@ let notas = [];
 //EventListeners
 eventListeners ();
 function eventListeners(){
+
+    //Agrega nota
     formulario.addEventListener("submit", agregarNota);
+
+    // Cuando el documento está listo
+    document.addEventListener("DOMContentLoaded", () => {
+        notas = JSON.parse(localStorage.getItem("notas")) || [];
+        console.log(notas);
+        crearHTML();
+    });
 
 };
 
@@ -75,10 +84,24 @@ function crearHTML (){
     if (notas.length > 0){
         notas.forEach( nota => {
 
+        // Agregar botón para eliminar nota
+        const btnEliminar = document.createElement("a");
+        btnEliminar.classList.add("borrar-nota");
+        btnEliminar.textContent = "X";
+
+        // Añadir la función de eliminar
+        btnEliminar.onclick = () => {
+            borrarNota(nota.id);
+        };
+
+        //Crea el HTML
         const li = document.createElement("li");
 
         // Añadir el texto
         li.innerText = nota.nota;
+
+        // Asignar el botón
+        li.appendChild(btnEliminar);
 
         //Insertar en el HTML
         lista_notas.appendChild(li);
@@ -92,6 +115,12 @@ function crearHTML (){
 //Agrega las notas actuales al localStorage
 function sincronizarStorage() {
     localStorage.setItem("notas", JSON.stringify(notas));
+}
+
+//Elimina la nota
+function borrarNota(id) {
+    notas = notas.filter(nota => nota.id !== id);
+    crearHTML();
 }
 
 function limpiarHTML() {
