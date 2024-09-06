@@ -49,11 +49,14 @@ p{
     border-radius: 5px;
     border: 1px solid #fff;
     resize: none;
-    color: #fff;
+    color: wheat;
     background: transparent;
     font-family: "Poppins";
 }
 
+.contenedor .elemento .placeholder textarea{
+    color: wheat;
+}
 .contenedor .elemento input[type="submit"]{
     width: 100%;
     padding: 10px 0;
@@ -71,42 +74,42 @@ p{
 }
 
 
-/* ejemplo */
 
 .error {
-    background-color: rgb(235, 139, 139);
+    background-color: rgb(248, 59, 59);
     text-align: center;
-    padding: 10px;
-    font-weight: 400;
+    padding: 5px;
     max-width: 400px;
     margin: 10px auto;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 15px;
 }
 .borrar-nota {
     margin-left: auto;
     border: none;
-    background-color: #826fec;
-    color: white;
+    background-color: rgb(91, 24, 153);
+    color: wheat;
     font-weight: bold;
     border-radius: 100px;
-    padding: 5px 10px;
+    padding: 2px 8px;
     outline: none;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .borrar-nota:hover {
-    background-color: rgb(248, 136, 136);
+    background-color: rgb(238, 41, 41);
 }
 li {
     list-style: none;
-    background-color: rgba(211, 211, 211, 0.534);
-    color: #fff;
+    background-color: rgba(228, 227, 227, 0.555);
+    color: black;
+    font-weight: 500;
     border-radius: 10px;
+    border: 3px solid #520f66;
     margin-top: 15px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
