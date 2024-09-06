@@ -41,8 +41,16 @@ function agregarNota (e){
 };
 
 
-//Mostrar mensaje de error
+
 function mostrarError (error){
+
+    // Comprueba si existe una alerta
+    const alerta = document.querySelector(".error");
+    if (alerta) {
+        alerta.remove();
+    };
+
+    //Se genera la alerta
     const mensajeError = document.createElement("P");
     mensajeError.textContent = error;
     mensajeError.classList.add("error")
