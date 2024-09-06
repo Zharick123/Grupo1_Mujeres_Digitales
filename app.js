@@ -85,6 +85,13 @@ function crearHTML (){
 
         });
     }
+
+    sincronizarStorage();
+}
+
+//Agrega las notas actuales al localStorage
+function sincronizarStorage() {
+    localStorage.setItem("notas", JSON.stringify(notas));
 }
 
 function limpiarHTML() {
