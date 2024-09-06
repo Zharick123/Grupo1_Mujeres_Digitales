@@ -24,6 +24,18 @@ function agregarNota (e){
         return;
     }
 
+    const notaObj = {
+        id: Date.now(),
+        nota
+    }
+
+    //Añadir al arreglo de notas
+    notas = [...notas, notaObj];
+
+    //Crear HTML
+    crearHTML();
+
+
 }
 
 //Mostrar mensaje de error
@@ -42,4 +54,21 @@ function mostrarError (error){
         mensajeError.remove();
     }, 3000);
 
+}
+
+//Muestra un listado de las notas
+function crearHTML (){
+    if (notas.length > 0){
+        notas.forEach( nota => {
+
+        const li = document.createElement("li");
+
+        // Añadir el texto
+        li.innerText = nota.nota;
+
+        //Insertar en el HTML
+        lista_notas.appendChild(li);
+
+        });
+    }
 }
