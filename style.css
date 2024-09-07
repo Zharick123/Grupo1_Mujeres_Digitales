@@ -114,3 +114,34 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: 80%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    .contenedor h2 {
+        font-size: 16px;
+    }
+    .contenedor .elemento input[type="submit"] {
+        padding: 8px 0;
+    }
+    .contenedor .elemento textarea {
+        font-size: 13px;
+    }
+    .error {
+        font-size: 12px;
+    }
+    .borrar-nota {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+    li {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
